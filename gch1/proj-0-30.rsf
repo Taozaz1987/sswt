@@ -1,0 +1,67 @@
+4.2	sfmath	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	x2=1
+	d2=1
+	n2=1
+	o1=0
+	o2=0
+	data_format="native_float"
+	esize=4
+	in="stdout"
+	x1=0
+	d1=0.008
+	n1=501
+	in="stdin"
+
+4.2	sfput	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	data_format="native_float"
+	in="/var/tmp/tccs/synwav/gch1/s1-0.rsf@"
+	unit1=s
+	label1=Time
+	label2=Amplitude
+4.2	sfadd	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	data_format="native_float"
+	esize=4
+	in="stdout"
+	in="stdin"
+
+4.2	sfnoise	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/tccs/synwav/gch1/s-0.rsf@"
+4.2	sftimefreq	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	d2=0.244141
+	n2=257
+	o2=0
+	d3=1
+	n3=1
+	data_format="native_float"
+	label2="Frequency"
+	n4=1
+	o3=0
+	label3="Amplitude"
+	esize=4
+	in="stdout"
+	unit2="Hz"
+	in="stdin"
+
+4.2	sfwindow	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:15 2025
+
+	d2=0.244141
+	n2=247
+	o1=0
+	o2=0
+	label1="Time"
+	data_format="native_float"
+	label2="Frequency"
+	esize=4
+	in="/var/tmp/tccs/synwav/gch1/proj-0-30.rsf@"
+	max2=60
+	unit1="s"
+	unit2="Hz"
+	d1=0.008
+	n1=501

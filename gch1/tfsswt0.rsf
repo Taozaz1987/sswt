@@ -1,0 +1,7 @@
+4.2	matlab	tccs/synwav/gch1:	taozaz@Taozaz	Wed Nov 26 13:31:23 2025
+
+	n2=501
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/tccs/synwav/gch1/tfsswt0.rsf@"
+	n1=257
