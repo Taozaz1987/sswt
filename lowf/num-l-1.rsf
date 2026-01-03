@@ -1,0 +1,130 @@
+4.2	sfspike	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	d2=0.01
+	o1=0
+	n2=201
+	o2=0
+	label1="Time"
+	data_format="native_float"
+	label2="Distance"
+	esize=4
+	in="stdout"
+	unit1="s"
+	unit2="km"
+	d1=0.002
+	n1=751
+	in="stdin"
+
+4.2	sfput	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	unit2=km
+	data_format="native_float"
+	o1=0
+	in="stdout"
+	label1=Time
+	o2=1
+	label2=X
+	unit1=s
+	in="stdin"
+
+4.2	sfwindow	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	d2=0.01
+	n2=201
+	o1=0
+	o2=1
+	label1="Time"
+	data_format="native_float"
+	label2="X"
+	min1=0
+	esize=4
+	in="/var/tmp/tccs/synwav/lowf/old.rsf@"
+	unit1="s"
+	unit2="km"
+	d1=0.002
+	n1=751
+4.2	sftimefreq	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	d2=0.665779
+	n2=377
+	o2=0
+	d3=0.01
+	n3=201
+	data_format="native_float"
+	label2="Frequency"
+	n4=1
+	o3=1
+	label3="X"
+	esize=4
+	in="/var/tmp/tccs/synwav/lowf/ltft.rsf@"
+	unit2="Hz"
+	unit3="km"
+4.2	sfwindow	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:54 2025
+
+	d2=0.665779
+	n2=166
+	o1=0
+	d3=0.01
+	n3=201
+	o2=0
+	label1="Time"
+	data_format="native_float"
+	o3=1
+	label2="Frequency"
+	label3="X"
+	esize=4
+	in="stdout"
+	max2=110
+	unit1="s"
+	unit2="Hz"
+	unit3="km"
+	d1=0.002
+	n1=751
+	in="stdin"
+
+4.2	sfmath	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:54 2025
+
+	x2=2
+	input=0
+	x3=3
+	data_format="native_float"
+	esize=4
+	in="stdout"
+	x1=1
+	in="stdin"
+
+4.2	sfstack	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:54 2025
+
+	d2=0.01
+	n2=201
+	n3=1
+	o2=1
+	data_format="native_float"
+	n4=1
+	label2="X"
+	esize=4
+	in="/var/tmp/tccs/synwav/lowf/num-l.rsf@"
+	unit2="km"
+4.2	sfwindow	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:55 2025
+
+	d2=0.01
+	n2=201
+	o1=0.4
+	o2=1
+	label1="Time"
+	f1=200
+	data_format="native_float"
+	label2="X"
+	esize=4
+	in="stdout"
+	unit1="s"
+	unit2="km"
+	d1=0.002
+	n1=551
+	in="stdin"
+
+4.2	sfsmooth	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:55 2025
+
+	data_format="native_float"
+	esize=4
+	in="/var/tmp/tccs/synwav/lowf/num-l-1.rsf@"

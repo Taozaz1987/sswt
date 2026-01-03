@@ -1,0 +1,45 @@
+4.2	sfspike	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	d2=0.01
+	o1=0
+	n2=201
+	o2=0
+	label1="Time"
+	data_format="native_float"
+	label2="Distance"
+	esize=4
+	in="stdout"
+	unit1="s"
+	unit2="km"
+	d1=0.002
+	n1=751
+	in="stdin"
+
+4.2	sfput	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	unit2=km
+	data_format="native_float"
+	o1=0
+	in="stdout"
+	label1=Time
+	o2=1
+	label2=X
+	unit1=s
+	in="stdin"
+
+4.2	sfwindow	tccs/synwav/lowf:	taozaz@Taozaz	Fri Nov 28 18:46:36 2025
+
+	d2=0.01
+	n2=201
+	o1=0
+	o2=1
+	label1="Time"
+	data_format="native_float"
+	label2="X"
+	min1=0
+	esize=4
+	in="/var/tmp/tccs/synwav/lowf/old.rsf@"
+	unit1="s"
+	unit2="km"
+	d1=0.002
+	n1=751
